@@ -4,10 +4,15 @@ const server = require('./src/server');
 require('dotenv').config();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI, options);
+
 const options = {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
 };
-server.start(process.env.PORT);
+
+mongoose.connect(process.env.MONGODB_URI, options)
+  .then(() => {
+    server.start(process.env.PORT);
+  })
+  .catch(e => console.error('Could not start server', e.message));
