@@ -8,8 +8,8 @@
 -  Simon, Ricardo, Stacy
 
 - [heroku](http://mariko-auth-api.herokuapp.com/)
-- [githubActions]()
-- [PR]()
+- [GHActions](https://github.com/Mariko-401-AdvancedJs/auth-api/actions)
+- [PR](https://github.com/Mariko-401-AdvancedJs/auth-api/pulls?q=is%3Apr+is%3Aclosed)
 
 
 
